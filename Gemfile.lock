@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    gilgamesh (0.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gilgamesh
+
+BUNDLED WITH
+   1.11.2
