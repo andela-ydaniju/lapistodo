@@ -1,2 +1,2 @@
 # lapistodo
-A gilgamesh todo app
+Algernon todo app

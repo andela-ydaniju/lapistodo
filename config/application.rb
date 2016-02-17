@@ -1,6 +1,6 @@
-require "gilgamesh"
+require "algernon"
 
 module LapisTodo
-  class Application < Gilgamesh::Application
+  class Application < Algernon::Application
   end
 end
