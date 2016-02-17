@@ -1,2 +1,9 @@
 require "./config/application.rb"
-run LapisTodo::Application.new
+LapisTodoApp = LapisTodo::Application.new
+
+def app
+  require "./config/routes.rb"
+  LapisTodoApp
+end
+
+run app

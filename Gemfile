@@ -1,3 +1,4 @@
 source "https://rubygems.org"
-
-gem "algernon"
+gem "algernon", path: "../algernon"
+gem "thin"
+gem "pry"
