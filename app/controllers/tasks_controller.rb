@@ -1,21 +1,28 @@
 class TasksController < ApplicationController
   def index
-    render :index, name: "Yusuf"
+    @tasks = Task.all
+  end
+
+  def new
+    @task = Task.new
+  end
+
+  def create
+    task = Task.create(task_params)
+    redirect_to "/tasks/#{task.id}"
   end
 
   def show
-    "complete Algernon"
+    @task = Task.find(params[:id])
   end
 
-  # def create
-  #   "Post nothing"
-  # end
-
-  # def update
-  #   "Put complete Algernon"
-  # end
-
-  # def destroy
-  #   "Delete complete Algernon"
-  # end
+  def task_params
+    parameters = {
+      title: params[:title],
+      description: params[:description],
+      updated_at: Time.now.to_s
+    }
+    parameters[:created_at] = Time.now.to_s if params[:id].nil?
+    parameters
+  end
 end
