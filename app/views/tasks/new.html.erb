@@ -1,13 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
-  
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,19 +67,25 @@
         </div>
         <!-- /.container -->
     </nav>
-    <div class = "form-part">
-      <h2 class="">Create Task</h2>
-      <form class="" action="/tasks" method="post" width="400">
+    <div class = "form-part container-fluid">
+        <div class = "form-part-in row">
+            <div class="col-xs-4">&nbsp;</div>
+            <div class="">
+              <h2 class="form-tag">Create Task</h2>
+              <form class="" action="/tasks" method="post">
 
-        
-        <label for="title" class="sr-only">Title</label>
-        <input type="text" id="title" class="form-control" placeholder="Title" name="title">
+                
+                <label for="title" class="sr-only">Title</label>
+                <input type="text" id="title" class="form-control" placeholder="Title" name="title">
 
-        <label for="description" class="sr-only">Description</label>
-        <input type="text" id="description" class="form-control"  placeholder="Description" name="description">
+                <label for="description" class="sr-only">Description</label>
+                <input type="text" id="description" class="form-control"  placeholder="Description" name="description">
+                </div>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Create Task"/>
+              </form>
+            </div>
+            <div class="col-xs-4">&nbsp;</div>
         </div>
-        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Create Task"/>
-      </form>
     </div>
 
 
