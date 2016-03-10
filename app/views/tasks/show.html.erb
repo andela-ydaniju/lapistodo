@@ -1,13 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
-  
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,6 +74,8 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2><%= @task.title %></h2>
                 <p><%= @task.description %></p>
+                <p><a href="/tasks/<%= @task.id %>/edit">Edit</a>   
+                <a href="/tasks/<%= @task.id %>?_method=delete">Delete</a></p>
             </div>
         </div>
     </section>

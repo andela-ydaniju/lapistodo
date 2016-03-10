@@ -13,7 +13,22 @@ class TasksController < ApplicationController
   end
 
   def show
-    @task = Task.find(params[:id])
+    @task = Task.find(params[:id].to_i)
+  end
+
+  def edit
+    @task = Task.find(params[:id].to_i)
+  end
+
+  def update
+    @task = Task.find(params[:id].to_i)
+    @task.update(task_params)
+    redirect_to "/tasks/#{@task.id}"
+  end
+
+  def destroy
+    Task.destroy(params[:id].to_i)
+    redirect_to "/tasks"
   end
 
   def task_params
