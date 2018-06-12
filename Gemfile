@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "algernon", path: "../algernon"
+gem "algernon"
 gem "thin"
 gem "pry"
 gem "pry-nav"
